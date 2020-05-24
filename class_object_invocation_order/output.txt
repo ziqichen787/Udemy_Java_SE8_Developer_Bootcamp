@@ -1,0 +1,17 @@
+Person: First Static Block
+Person: Second Static Block
+Employee: First Static Block
+Employee: Second Static Block
+Instructor: First Static Block
+Instructor: Second Static Block
+Person: First Instance Initialization Block
+Person: Second Instance Initialization Block
+Person()
+Employee: First Instance Initialization Block
+Employee: Second Instance Initialization Block
+Employee()
+Instructor: First Instance Initialization Block
+Instructor: Second Instance Initialization Block
+Instructor()
+Person: Hello!
+Second Instance Initialization String
