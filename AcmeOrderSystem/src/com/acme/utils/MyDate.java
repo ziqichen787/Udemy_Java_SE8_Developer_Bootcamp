@@ -1,9 +1,12 @@
 package com.acme.utils;
 
+import java.util.ArrayList;
+
 public class MyDate {
 	public int day;
 	public int year;
 	public int month;
+	static ArrayList<Integer> leapYears = new ArrayList<Integer>();
 
 	public MyDate() {
 
@@ -27,6 +30,15 @@ public class MyDate {
 		day = d;
 		year = y;
 		month = m;
+	}
+	
+	public static void leapYears() {
+		for (int i = 1752; i <= 2020; i = i + 4) {
+			if(i % 100 != 0 || i % 400 == 0) {
+				leapYears.add(i);
+				System.out.println("The year " + i + " is a leap year.");
+			}
+		}
 	}
 
 }
