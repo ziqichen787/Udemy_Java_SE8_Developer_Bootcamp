@@ -19,14 +19,19 @@ public class TestOrders {
 		
 		System.out.println("The tax rate is currently: " + Order.taxRate);
 		Order.computeTaxOn(3000.00);
-		anvil.computerTax();
-		balloons.computerTax();
-		
+		anvil.computeTax();
+		balloons.computeTax();
+
 		Order.setTaxRate(0.06);
 		System.out.println("The tax rate is currently: " + Order.taxRate);
 		Order.computeTaxOn(3000.00);
-		anvil.computerTax();
-		balloons.computerTax();
+		anvil.computeTax();
+		balloons.computeTax();
+		
+		System.out.println("The total bill for: " + anvil + " is " +
+		anvil.computeTotal());
+		System.out.println("The total bill for: " + balloons + " is " +
+		balloons.computeTotal());
 
 	}
 
